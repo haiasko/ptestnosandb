@@ -24,6 +24,7 @@ library
                      Handler.Mirror
                      Handler.Blog
                      Handler.Article
+                     Handler.MyHome
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -74,6 +75,7 @@ library
                  , monad-logger                  >= 0.3        && < 0.4
                  , fast-logger                   >= 2.1        && < 2.2
                  , wai-logger                    >= 2.1        && < 2.2
+                 , yesod-markdown
 
 executable         ptestnosandb
     if flag(library-only)
